@@ -1,0 +1,17 @@
+body{
+    background-color: powderblue;
+}
+h1{
+    color: blue;
+    font-size: 200%;
+    border: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: inherit;
+}
+p{
+    color: red;
+    font-size: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    border: 1px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script> src="question8.js"</script> -->
+    <label>Thousands Separator: </label>
+<input type="text" id="thousandsSep">
+<button id="tSeparator">Check</button><br><br>
+<script>
+    document.getElementById("tSeparator").onclick = function() {
+    var tsp = document.getElementById("thousandsSep").value;
+    var tspString = "" + tsp;
+    var real = tspString.split(".");
+    var comma = 0;
+    var fomatted_number = "";
+    for(var i = real[0].length; i >= 0; i--) {
+        if(comma == 3) {
+            fomatted_number = real[0].charAt(i) + "," + fomatted_number;
+            comma = 1;
+        } else {
+            fomatted_number = real[0].charAt(i) + fomatted_number;
+            comma++;
+        }
+    }
+
+    window.alert(fomatted_number+"." +real[1]);
+}
+</script>
+</body>
+</html>

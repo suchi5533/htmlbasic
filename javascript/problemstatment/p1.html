@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width={margin: 30px;}
+</head>
+<title>Document</title> 
+<body>
+    
+        <form id="form1" onsubmit="add()">
+        First name: <input type="text" name="fname" value="David"><br>
+        Last name: <input type="text" name="lname" value="Beckham"><br>
+        <input type="submit" value="Submit">
+        </form>
+        function add(){
+            let first,second;
+            first=document.getElementById("firstname").nodeValue;
+            second=document.getElementById("lastname").nodeValue;
+            // third=first+" "+second
+            document.write(third)
+            document.getElementById("here").innerHTML=first;
+            document.getElementById("here").innerHTML=second;
+            document.getElementById("here").innerHTML = first+" "+second;
+            
+            }
+           
+</body>
+</html>

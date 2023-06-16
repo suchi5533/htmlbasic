@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    table{
+        /* table border="3px" style="text-align: center; margin: 100px; width: 80%; height: 150px;" */
+       border-style: dotted;
+       /* background-color: bisque; */
+       border-collapse: collapse;
+       margin: 100px;
+       width: 80%;
+       height: 150px;
+       /* cell spacing */
+       border-spacing: 60px;
+    }
+    /* tr:nth-child(odd),td:nth-child(odd){
+        background-color: aqua;
+    }*/
+    th,td{
+        border: 1px solid black;
+       border-collapse: collapse; 
+       /* background-color: burlywood; */
+       /* padding  */
+       padding-left: 20px;
+       padding-top: 20px;
+       padding-bottom: 30;
+       padding-right: 20;
+
+    } 
+</style>
+</head>
+<body>
+    <table> 
+        <caption> student data</caption>
+        <colgroup>
+            <col span="2">
+            <!-- <col span="2" style="background-color: aqua;"> -->
+            <col span="2" style="visibility: collapse;">
+            <col span="3" style="background-color:yellowgreen">
+        </colgroup>
+            <tr>
+
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+                <th>Saturday</th>
+                <th>Sunday</th>
+                
+            </tr>
+            <tr>
+                <!-- <th rowspan="2"> age</th> -->
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <!-- <th rowspan="2"> age</th> -->
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+    </table>
+</body>
+</html>

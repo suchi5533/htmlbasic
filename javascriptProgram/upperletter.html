@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to check first letter is uppercase or not</title>
+</head>
+<body>
+    <!-- <script src="uppercase.js"></script> -->
+
+    <h1> enter a string</h1>
+    <input type="text"  id="word">
+    <input type="button" onclick="checkUpperorLower()" value="checkit">
+
+    
+   <script>
+    function checkUpperorLower()
+    {
+
+    
+            var txt=document.getElementById("word").value;
+            var character=txt.charAt(0);
+            var upper=character.toUpperCase();
+            if(upper==character){
+                window.alert("uppercase")
+            }else{
+                window.alert("lowercase")
+            }
+            document.write("Hellooooo")
+   
+        //  document.write(txt);
+        console.log(txt);
+    }
+</script>
+
+</body>
+</html>

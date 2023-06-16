@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <style type="text/css">
+        body
+        {
+            background-color: yellowgreen;
+
+            border: 15px;
+            margin: 100px;
+        }
+
+</style>
+    <title>Count dropdown list</title>
+
+</head>
+<!-- 4.Write a JavaScript program to count and display the items of a dropdown list, in an alert window -->
+<body>
+    <form>
+        <select id="mySelect">
+            <option> apple</option>
+            <option>banana</option>
+            <option> graps</option>
+            <option>peru</option>
+            <option> chiku</option>
+            <option>santri</option>
+        </select>
+        <input type="button" onclick="getOptions()" value="countDisplayAlert">
+    </form> 
+    <script>    
+        function getOptions(){
+        var x= document.getElementById("mySelect")
+            var txt1 = "No. of items in dropdown is : ";
+        var i;
+        l=document.getElementById("mySelect").length;  
+        txt1 = txt1+l;
+           for (i=0;i<x.length;i++)
+             {
+                 txt1 = txt1 + "\n" + x.options[i].text;
+             }
+            alert(txt1);
+}
+</script>
+</body>
+</html>

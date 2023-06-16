@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        body
+        {
+            background-color: cornsilk;
+            padding: auto;
+            margin-top: 100px;
+        }
+
+    </style>
+    <title>String count </title>
+</head>
+<body>
+
+    <h> Enter a string</h>
+    <input type="text" id="txt" >
+    <input type="button" onclick="countString()" value="countstring">
+    <input id = "numberofwords" type="text" value="" size="6"> 
+
+    <script>
+        // Write a JavaScript program to count number of words in string
+        function countString()
+        {
+            
+           string= document.getElementById("txt").value;
+            //exclude  start and end white-space
+            string = string.replace(/(^\s*)|(\s*$)/gi,"");
+            //convert 2 or more spaces to 1  
+            string = string.replace(/[ ]{2,}/gi," ");
+        // exclude newline with a start spacing  
+        string = string.replace(/\n /,"\n");
+        document.getElementById("numberofwords").value = string.split(' ').length;
+
+        }
+    </script>
+</body>
+</html>

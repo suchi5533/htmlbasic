@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p> 1.Write a JavaScript function to get the values of First and Last name from html form </p>
+    <form>
+        <label>First Name: </label>
+        <input type="text" id="fname"><br>
+        <label>Last Name</label>
+        <input type="text" id="lname"><br>
+        <input type="submit" id="button">
+    </form>
+    <script>
+        document.getElementById("button").onclick = function() {
+    let fn = document.getElementById("fname").value;
+    let ln = document.getElementById("lname").value;
+
+    window.alert(` ${ln} ${fn}`);
+}
+    </script>
+    <br>
+</body>
+</html>

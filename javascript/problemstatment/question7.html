@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP</title>
+</head>
+<body>
+    <input type="text"id="IP"><br><br>
+    <button onclick="f1()">submit</button>
+    <scrIPt>
+        function f1(){
+            let val =document.getElementById("IP").value;
+            let four = val.split(".");
+            let isValue=false;
+            if(val="")
+            
+            {
+                isValue=false;  
+            }else{
+                if(four.length==4){
+                    for(var i=0;i<four.length;i++){
+                        if(four[i]>=0 && four[i]<=255){
+                            isValue=true;
+                        }else{
+                            isValue=false;
+                            break;
+                        }
+                    }
+                }else{
+                    isValue=false;
+                }
+            }if(isValue){
+                window.alert("vaild");
+                
+            }else{
+                window.alert("not valid");
+            }
+           
+
+        }
+    </scrIPt>
+</body>
+</html>

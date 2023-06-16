@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <style type="html/css">
+    body{
+        margin: 100px;
+
+    } </style>
+    <title>Table Row Insertion</title>
+</head>
+<body>
+  
+    <table id="myTable"  border="1">
+    <tr>
+        <td>1</td>
+        <td>suchit</td>
+        <td>waghamare</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>suraj</td>
+        <td>bade</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>sachin</td>
+        <td>wagh</td>
+    </tr>
+</table>
+<form>
+<input type="button" onclick="valuChange()" value="valuchange">
+</form>
+
+<script>
+function valuChange()
+{
+  var  rownum=window.prompt("Input the row number 0,1,2","0");
+  var   colnum=window.prompt("Input the col number(0,1,2)","0");
+  var   content=window.prompt("Input the cell content")
+    
+    //var x=document.getElementById('myTable')row.[parseInt(rownnum,10)].cells;
+    var y=document.getElementById("myTable").rows[parseInt(rownum,10)].cells;
+    y[parseInt(colnum,10)].innerHTML=content;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style type="text/css">
+        body {
+            margin: 50px;
+        }
+        <meta charset=utf-8 />
+
+    </style>
+    <title>Dropdown list program</title>
+</head>
+<body>
+    <form>
+        <select id="menname">
+            <option> amit</option>
+            <option> rohit</option>
+            <option> ajay</option>
+            <option> samir</option>
+        </select>
+        <input type="button" onclick="removeMen()" value="Selectandremove">
+        <script>
+            function removeMen()
+            {
+                var store=document.getElementById("menname");
+               // m.remove(x.selectedIndex);
+               store.remove(store);
+            }
+        </script>
+    </form>
+</body>
+</html>
