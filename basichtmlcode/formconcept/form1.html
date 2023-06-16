@@ -10,19 +10,23 @@
     <h2> second heading</h2>
     <!-- Date of birth add in form -->
     <form>
-        <fieldset style="width: 70%; height: 400px; background-color: aliceblue;">
+        <fieldset style="width: 70%; height: 500px; background-color: aliceblue;">
         <legend> Student Information</legend>
-        <label for="sname">Student Name:</label>
-        <input type="text" name="sname" id="sname" ><br><br>
-        <label for="sage">Student Age:</label>
-        <input type="text" name="sage" id="sage" ><br>
-        <label for="">Student Age:</label>
-        <input type="text" name="sage" id="sage" ><br>
+        <label for="fname">First Name:</label>
+        <input type="text" name="fname" id="fname" ><br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" name="lname" id="lname" ><br><br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email"><br> <br>
+        <label for="mobno"> Mobile Number</label>
+        <input type="number" name="mobno" id="mobno"><br> <br>
         <label for="dateofbirth">Birthdate</label>
-        <input type="datetime-local" id="birthdate" name="dateofbirth">
-        <input type="submit" value="submit"><br><br>
-        <label for="textarea">input text</label>
-        <textarea name="userdescription" rows="10" cols="20"></textarea> <br><br>
+        <input type="datetime-local" id="birthdate" name="dateofbirth"><br><br>
+        <label for="textarea">extra information:</label>
+        <textarea name="personinformation" style="width: 40%; height: 50px;"></textarea> <br><br>
+        <label for="file">Select file</label>
+        <input type="file" id="file" name="file" multiple>
+        <input type="submit" value="Register"><br><br>
         <input type="button" onclick="alert('please enter correct word')" value="click"><br>
     </fieldset>
     </form>
